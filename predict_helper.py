@@ -8,4 +8,4 @@ model=load("artifacts/model_xgb.pkl")
 def predict(to_predict):
     data=pd.DataFrame([to_predict])
     predication=model.predict(data)
-    return float(predication)
+    return float(predication[0])
