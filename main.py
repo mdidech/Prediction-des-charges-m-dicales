@@ -1,6 +1,7 @@
 import streamlit as st
 from predict_helper import predict
 
+st.title("Predictions des charges médicales")
 categorical_options={
     "sex":["female","male"],
     "smoker":["yes","no"],
